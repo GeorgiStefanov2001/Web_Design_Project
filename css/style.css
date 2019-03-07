@@ -13,3 +13,12 @@ body,html{
 #avengers_plot{
     padding: 20px 0px 0px 100px;
 }
+
+.movie{
+    padding: 0px 0px 50px 50px;
+}
+
+.logo_pic{
+    width: 5%;
+    height: 5%;
+}
