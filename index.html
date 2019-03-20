@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <title>Movie Site</title> <!-- I really need to think of a better name -->
 
     <script type = "text/javascript">
         $(document).ready(function(){
-            $("#navbar_code").load("navbar.html");
+            var navbar = "#navbar_code";
+            $(navbar).load("navbar.html");
         }); 
     </script>
 </head>
@@ -26,7 +28,32 @@
             <ul class = "list-unstyled">
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <img src="images/avengers/infinity_war.jpg" alt="nesh ne ralti" class="card-img-top">
+                        <div id="infinity_war_carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-slide-to="0" class="active"></li>
+                              <li data-slide-to="1"></li>
+                              <li data-slide-to="2"></li>
+                            </ol>
+                            
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="card-img-top card_images" src="images/avengers/infinity_war.jpg" alt="First image">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="card-img-top card_images" src="images/avengers/infinity_war_2.jpg" alt="Second inage">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="card-img-top card_images" src="images/avengers/infinity_war_3.jpg" alt="Third image">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#infinity_war_carousel" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#infinity_war_carousel" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <!-- <img id = "avengers_image"src="images/avengers/infinity_war.jpg" alt="nesh ne ralti" class="card-img-top"> -->
                         <div class = "card-body">
                             <h4 class = "card-title">Avengers: Infinity War</h4>
                             <h6 class = "text-muted">Directed by Joe & Anthony Russo</h6>
