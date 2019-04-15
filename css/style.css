@@ -26,3 +26,14 @@ body,html{
 .card_images{
     height: 37rem;
 }
+
+#top_btn{
+    font-size: 30px;
+}
+
+.top_button{
+    display:block;
+    text-align: center;
+    background-color: rgb(52,58,64);
+}
+

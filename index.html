@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src = "js/main.js"></script>
-    <script src = "js/carousel.js"></script>
     <script src = "js/navbar.js"></script>
 
     <title>Movie Site</title> <!-- I really need to think of a better name -->
@@ -25,16 +24,6 @@
             <ul class = "list-unstyled">
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <!-- <div id = "inf_war_carousel"></div>
-                        <script type = "text/javascript">
-
-                            $("#inf_war_carousel").load("carousel_reuse.html",function(){
-                                change_carousel_img("images/avengers/infinity_war.jpg", 
-                                "images/avengers/infinity_war_2.jpg", 
-                                "images/avengers/infinity_war_3.jpg", "infinity_war");
-                            }); //load the carousel code
-                        </script> -->
-
                         <div id="infinity_war_carousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-slide-to="0" class="active"></li>
@@ -61,9 +50,6 @@
                             </a>
                         </div>
                         
-                        <!-- getting access to the carousel.js file so I can swap the different images depending on the movie -->
-                        <script src = "js/carousel.js"></script> 
-                        
                         <div class = "card-body">
                             <h4 class = "card-title">Avengers: Infinity War</h4>
                             <h6 class = "text-muted">Directed by Joe & Anthony Russo</h6>
@@ -74,16 +60,6 @@
                 </li>
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <!-- <div id = "split_carousel"></div>
-                        <script type = "text/javascript">
-
-                            $("#split_carousel").load("carousel_reuse.html",function(){
-                                change_carousel_img("images/split/split.jpg", 
-                                "images/split/split_2.jpg", 
-                                "images/split/split_2.jpg","split");
-                            }); //load the carousel code
-                        </script> -->
-
                         <div id="split_carousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-slide-to="0" class="active"></li>
@@ -118,6 +94,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
                         <img src="images/split.jpg" alt="nesh ne ralti" class="card-img-top">
