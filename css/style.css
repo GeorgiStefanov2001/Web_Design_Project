@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
 body,html{
     height: 100%;
+    font-family: 'Teko', sans-serif !important;
+    background-color: #25274D !important;
+}
+
+p{
+    color:white;
 }
 
 .parallax{
@@ -27,13 +35,56 @@ body,html{
     height: 37rem;
 }
 
-#top_btn{
-    font-size: 30px;
-}
-
 .top_button{
     display:block;
     text-align: center;
     background-color: rgb(52,58,64);
 }
+
+.top_button button{
+    font-size: 30px;
+}
+
+.navbar{
+     background-color: #25274D !important; 
+}
+
+.navbar li a{
+    color: white;
+    font-size: 25px;
+}
+
+#movie_desc{
+    color: #29648a;
+    padding: 0px 25px 0px 25px;
+    text-align: justify;
+}
+
+#custom_btn{
+    background-color: #29648a;
+    color: white;
+}
+
+.about_images{
+    width: 20%;
+    height: auto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list_alignment{
+    color: white; 
+    list-style-position: inside; 
+    text-align: justify;
+}
+
 
