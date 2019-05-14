@@ -45,15 +45,6 @@ p{
     font-size: 30px;
 }
 
-.navbar{
-     background-color: #25274D !important; 
-}
-
-.navbar li a{
-    color: white;
-    font-size: 25px;
-}
-
 #movie_desc{
     color: #29648a;
     padding: 0px 25px 0px 25px;
@@ -86,5 +77,6 @@ h1{
     list-style-position: inside; 
     text-align: justify;
 }
+
 
 

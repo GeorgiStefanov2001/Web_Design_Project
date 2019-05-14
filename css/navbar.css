@@ -1,0 +1,35 @@
+.custom_navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.custom_navbar li {
+    display: inline;
+}
+
+
+.custom_navbar a{
+    padding-left: 25px;
+    color: white;
+    font-size: 35px;
+    display: inline;
+}
+
+.site_name{
+    padding: 0;
+    background-color: #29648a;
+    display: inline;
+    font-size: 50px;
+    text-align: center;
+}
+
+.custom_navbar li a:hover{
+   color: #f8e9a1;
+   text-decoration: none;
+}
+
+.current{
+    color: #29648a !important;
+}
