@@ -17,11 +17,6 @@ h1{
     text-align: center;
 }
 
-
-#avengers_plot{
-    padding: 20px 0px 0px 100px;
-}
-
 .movie{
     padding: 0px 0px 50px 50px;
 }
@@ -34,20 +29,13 @@ h1{
 }
 
 
-.about_images{
-    width: 20%;
-    height: auto;
-}
-
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.list_alignment{
-    color: white; 
-    list-style-position: inside; 
-    text-align: justify;
+#center_text{
+    text-align: center;
 }
 

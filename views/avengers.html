@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/parallax.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/movie_views.css">
+    <link rel="stylesheet" href="../css/movie_images.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src = "../js/topButton.js"></script>
 
     <title>Avengers: Infinity War</title>
 </head>
 <body>
-    <div class = "parallax" style = "background-image: url(../images/avengers/main_image.jpg);">
-        <h2 class = "display-2 text-center text-light" style = "padding-top:300px">Avengers: Infinity War</h2>
+    <div class = "parallax" id = "inf_war_first_img">
+        <h2 class = "display-2 text-center text-light" id = "movie_title">Avengers: Infinity War</h2>
     </div>
 
-    <div style = "padding-bottom: 100px;  text-align:center;">
-       <p style = "font-size: 45px; padding: 25px 25px 0px 25px;">An unprecedented cinematic journey ten years in the making and spanning the entire Marvel Cinematic Universe, 
+    <div id = "movie_desc">
+       <p>An unprecedented cinematic journey ten years in the making and spanning the entire Marvel Cinematic Universe, 
            Marvel Studios' "Avengers: Infinity War" brings to the screen the ultimate, deadliest showdown of all time. 
            The Avengers and their Super Hero allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation 
            and ruin puts an end to the universe.</p>
 
-        <h3 class = "display-3" style = "padding-top: 100px; color: white;"><span style = "color: orange;">8.5</span>/10 IMDb rating</h3>
+        <h3 class = "display-3" ><span id = "orange_highlight">8.5</span>/10 IMDb rating</h3>
 
     </div>
 
-    <div style = "text-align:center;">
-        <p style = "padding: 25px 25px 0px 25px; font-size: 45px;">The film is directed by Joe and Anthony Russo who are known for 
-            <span style = "color: orange;"> Captain America: Winter Soldier  </span>
-            and <span style = "color:orange;">Captain America: Civil War</span></p>
-        <img src="../images/avengers/directors.jpg" class = "rounded mx-auto d-block" style = "padding-bottom: 10px">
+    <div id = "center_text">
+        <p>The film is directed by Joe and Anthony Russo who are known for 
+            <span id = "orange_highlight"> Captain America: Winter Soldier  </span>
+            and <span id = "orange_highlight">Captain America: Civil War</span></p>
+        <img src="../images/avengers/directors.jpg" class = "rounded mx-auto d-block">
     </div>
 
-    <div class = "parallax" style = "background-image: url(../images/avengers/thanos.jpg);"></div>
+    <div class = "parallax" id = "inf_war_second_img"></div>
     
-    <div style = "text-align:center;">
-        <p style = "padding: 25px 25px 0px 25px; font-size: 45px;">Avengers: Infinity War trailer</p>
+    <div id = "center_text">
+        <p>Avengers: Infinity War trailer</p>
     </div>  
 
-    <iframe style = "margin: 25px auto; display: block;" width="560" height="315" src="https://www.youtube.com/embed/6ZfuNTqbHE8" 
+    <iframe id = "trailer" width="560" height="315" src="https://www.youtube.com/embed/6ZfuNTqbHE8" 
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <div class = "top_button">

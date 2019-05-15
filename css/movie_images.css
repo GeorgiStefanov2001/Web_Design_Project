@@ -1,0 +1,32 @@
+#inf_war_first_img{
+    background-image: url(../images/avengers/main_image.jpg);
+}
+
+#inf_war_second_img{
+    background-image: url(../images/avengers/thanos.jpg);
+}
+
+#mad_max_first_img{
+    background-image: url(../images/mad_max/main.jpg);
+}
+
+#mad_max_second_img{
+    background-image: url(../images/mad_max/main_2.jpg);
+}
+
+#revnant_first_img{
+    background-image: url(../images/revenant/main.jpg);
+}
+
+#revnant_second_img{
+    background-image: url(../images/revenant/main_2.jpg);
+}
+
+#split_first_img{
+    background-image: url(../images/split/split_main.jpg);
+}
+
+#split_second_img{
+    background-image: url(../images/split/second_main.jpg);
+}
+

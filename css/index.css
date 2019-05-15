@@ -1,0 +1,12 @@
+#card_styling{
+    width: 25rem;
+}
+
+.slideshow_buttons{
+    padding-top: 25px;
+    text-align: center;
+}
+
+.slideshow_buttons button{
+    width: 5rem;
+}

@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/parallax.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/movie_views.css">
+    <link rel="stylesheet" href="../css/movie_images.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src = "../js/topButton.js"></script>
 
     <title>The Revenant</title>
 </head>
 <body>
-    <div class = "parallax" style = "background-image: url(../images/revenant/main.jpg);">
-        <h2 class = "display-2 text-center text-light" style = "padding-top:300px">The Revenant</h2>
+    <div class = "parallax" id = "revenant_first_img"></div>
+        <h2 class = "display-2 text-center text-light" id = "movie_title">The Revenant</h2>
     </div>
 
-    <div style = "padding-bottom: 100px;  text-align:center;">
-       <p style = "font-size: 45px; padding: 25px 25px 0px 25px;">Inspired by true events, 
+    <div id = "movie_desc">
+       <p>Inspired by true events, 
         THE REVENANT is an immersive and visceral cinematic experience capturing one man's epic adventure of survival and the extraordinary power of the 
         human spirit. In an expedition of the uncharted American wilderness, legendary explorer Hugh Glass (Leonardo DiCaprio) is brutally attacked by a 
         bear and left for dead by members of his own hunting team. In a quest to survive, Glass endures unimaginable grief as well as the betrayal of his
          confidant John Fitzgerald (Tom Hardy). Guided by sheer will and the love of his family, Glass must navigate a vicious winter in a relentless pursuit
           to live and find redemption.</p>
 
-        <h3 class = "display-3" style = "padding-top: 100px; color: white;"><span style = "color: orange;">8.0</span>/10 IMDb rating</h3>
+        <h3 class = "display-3"><span id = "orange_highlight">8.0</span>/10 IMDb rating</h3>
 
     </div>
 
-    <div style = "text-align:center;">
-        <p style = "padding: 25px 25px 0px 25px; font-size: 45px;">The film is directed by  Alejandro G. Iñárritu who is known for 
-            <span style = "color: orange;">Birdman or (The Unexpected Virtue of Ignorance)</span> and <span style = "color: orange;">Biutiful</span>
-        <img src="../images/revenant/alejandro.jpg" class = "rounded mx-auto d-block" style = "padding-bottom: 10px">
+    <div id = "center_text">
+        <param>The film is directed by  Alejandro G. Iñárritu who is known for 
+            <span id = "orange_highlight">Birdman or (The Unexpected Virtue of Ignorance)</span> and <span id = "orange_highlight">Biutiful</span>
+        <img src="../images/revenant/alejandro.jpg" class = "rounded mx-auto d-block">
     </div>
 
-    <div class = "parallax" style = "background-image: url(../images/revenant/main_2.jpg);"></div>
+    <div class = "parallax" id = "revenant_second_img"></div>
     
-    <div style = "text-align:center;">
-        <p style = "padding: 25px 25px 0px 25px; font-size: 45px;">The Revenant trailer</p>
+    <div id = "center_text">
+        <p>The Revenant trailer</p>
     </div>  
 
-    <iframe style = "margin: 25px auto; display: block;" width="560" height="315" src="https://www.youtube.com/embed/LoebZZ8K5N0" 
+    <iframe id = "trailer" width="560" height="315" src="https://www.youtube.com/embed/LoebZZ8K5N0" 
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <div class = "top_button">

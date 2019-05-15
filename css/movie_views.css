@@ -1,0 +1,27 @@
+#movie_title{
+    padding-top:300px;
+}
+
+#movie_desc{
+    padding-bottom: 100px; 
+    text-align:center;
+}
+
+p {
+    font-size: 45px;
+    padding: 25px 25px 0px 25px;
+}
+
+#movie_desc h3{
+    padding-top: 100px;
+    color: white;
+}
+
+#orange_highlight{
+    color: orange;
+}
+
+#trailer{
+    margin: 25px auto;
+    display: block;
+}
