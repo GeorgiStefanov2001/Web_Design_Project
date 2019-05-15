@@ -32,10 +32,7 @@
 }
 
 .custom_navbar a:hover{
-    color: yellow;
-    text-decoration: none;
-}
-
-.current{
+    color: white;
     background-color: #25274D !important;
+    text-decoration: none;
 }
