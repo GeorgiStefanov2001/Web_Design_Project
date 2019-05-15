@@ -1,8 +1,11 @@
-.custom_navbar {
+.custom_navbar{
+    background-color: #270F37;
+}
+
+.custom_navbar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline;
 }
 
 .custom_navbar li {
@@ -11,25 +14,28 @@
 
 
 .custom_navbar a{
-    padding-left: 25px;
+    padding: 0px 25px 0px 25px;
     color: white;
     font-size: 35px;
-    display: inline;
+    text-align:center;
+    text-decoration: none;
 }
 
 .site_name{
-    padding: 0;
-    background-color: #29648a;
-    display: inline;
-    font-size: 50px;
     text-align: center;
 }
 
-.custom_navbar li a:hover{
-   color: #f8e9a1;
-   text-decoration: none;
+.site_name h1{
+    color: white;
+    padding-top: 25px;
+    font-size: 70px;
+}
+
+.custom_navbar a:hover{
+    color: yellow;
+    text-decoration: none;
 }
 
 .current{
-    color: #29648a !important;
+    background-color: #25274D !important;
 }

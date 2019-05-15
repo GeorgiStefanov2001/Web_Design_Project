@@ -6,174 +6,161 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/navbar.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src = "js/main.js"></script>
 
     <title>MyMovies</title> <!-- I really need to think of a better name -->
 
 </head>
 <body>
     <div id = "navbar_code">
-        <!-- the reuasble navbar code comes here -->
+        <!-- navbar -->
     </div>
-    
-    <div class = "container-fluid" style = "padding-top: 20px;">
+
+    <script src = "js/navbar.js"></script>
+
+    <div class = "site_name" >
+        <h1>My Movie Site</h1> 
+    </div>
+
+    <div class = "container-fluid">
         <div class = "list-group">
             <ul class = "list-unstyled">
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <div id="infinity_war_carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-slide-to="0" class="active"></li>
-                              <li data-slide-to="1"></li>
-                              <li data-slide-to="2"></li>
-                            </ol>
-                            
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="card-img-top card_images" src="images/avengers/infinity_war.jpg" alt="First image">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/avengers/infinity_war_2.jpg" alt="Second inage">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/avengers/infinity_war_3.jpg" alt="Third image">
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#infinity_war_carousel" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#infinity_war_carousel" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon"></span>
-                            </a>
-                        </div>
-                        
-                        <div class = "card-body" style = "text-align: center;">
-                            <h4 class = "card-title">Avengers: Infinity War</h4>
-                            <h6 class = "text-muted">Directed by Joe & Anthony Russo</h6>
-                            <p id = "movie_desc">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat 
-                                the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
-                            <a href="views/avengers.html" id = "custom_btn" class = "btn">Details</a>
-                        </div>
+                      <div id = "custom_slideshow" class = "inf_war_slideshow">
+                          <div id = "inf_war_slideshow2">
+                            <img src="images/avengers/infinity_war_3.jpg" alt="Third image">
+                          </div>
+                          <div id = "inf_war_slideshow1">
+                              <img src="images/avengers/infinity_war_2.jpg" alt="Second image">
+                          </div>
+                          <div id = "inf_war_slideshow0">
+                              <img src="images/avengers/infinity_war.jpg" alt="First inage">
+                          </div>
+                      </div> 
+
+                      <div style = "padding-top: 25px; text-align: center;">
+                        <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "prev('inf_war_slideshow')">Prev</button>
+                        <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "next('inf_war_slideshow')">Next</button>
+                      </div>
+
+                      <hr>
+
+                      <div class = "card-body" style = "text-align: center;">
+                          
+                          <h4 class = "card-title">Avengers: Infinity War</h4>
+                          <h6 class = "text-muted">Directed by Joe & Anthony Russo</h6>
+                          <p id = "movie_desc">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat
+                              the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
+                          <a href="views/avengers.html" id = "custom_btn" class = "btn">Details</a>
+                      </div>
+
                     </div>
                 </li>
+
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <div id="split_carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-slide-to="0" class="active"></li>
-                              <li data-slide-to="1"></li>
-                              <li data-slide-to="2"></li>
-                            </ol>
-                            
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="card-img-top card_images" src="images/split/split.jpg" alt="First image">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/split/split_2.jpg" alt="Second inage">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/split/split_3.jpg" alt="Third image">
-                              </div>
+
+                        <div id = "custom_slideshow" class = "split_slideshow">
+                            <div id = "split_slideshow2">
+                              <img src="images/split/split_3.jpg" alt="Third image">
                             </div>
-                            <a class="carousel-control-prev" href="#split_carousel" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#split_carousel" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon"></span>
-                            </a>
+                            <div id = "split_slideshow1">
+                              <img src="images/split/split_2.jpg" alt="Second inage">
+                            </div>
+                            <div id = "split_slideshow0">
+                              <img src="images/split/split.jpg" alt="First image">
+                            </div>
                         </div>
-                        
+
+                        <div style = "padding-top: 25px; text-align: center;">
+                            <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "prev('split_slideshow')">Prev</button>
+                            <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "next('split_slideshow')">Next</button>
+                        </div>
+    
+                        <hr>
+
                         <div class = "card-body" style = "text-align: center;">
                             <h4 class = "card-title">Split</h4>
                             <h6 class = "text-muted">Directed by M. Night Shyamalan</h6>
-                            <p id = "movie_desc">Three girls are kidnapped by a man with a diagnosed 23 distinct personalities. 
+                            <p id = "movie_desc">Three girls are kidnapped by a man with a diagnosed 23 distinct personalities.
                                 They must try to escape before the apparent emergence of a frightful new 24th.</p>
-                            <a href="" id = "custom_btn" class = "btn">Details</a>
+                            <a href="views/split.html" id = "custom_btn" class = "btn">Details</a>
                         </div>
                     </div>
                 </li>
 
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <div id="mad_max_carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-slide-to="0" class="active"></li>
-                              <li data-slide-to="1"></li>
-                              <li data-slide-to="2"></li>
-                            </ol>
-                            
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="card-img-top card_images" src="images/mad_max/mad_max.jpg" alt="First image">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/mad_max/mad_max2.jpg" alt="Second inage">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/mad_max/mad_max3.jpg" alt="Third image">
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#mad_max_carousel" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#mad_max_carousel" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon"></span>
-                            </a>
-                        </div>
                         
+                      <div id = "custom_slideshow" class = "mad_max_slideshow">
+                            <div id = "mad_max_slideshow2">
+                              <img src="images/mad_max/mad_max3.jpg" alt="Third image">
+                            </div>
+                            <div id = "mad_max_slideshow1">
+                              <img src="images/mad_max/mad_max2.jpg" alt="Second inage">
+                            </div>
+                            <div id = "mad_max_slideshow0">
+                              <img src="images/mad_max/mad_max.jpg" alt="First image">
+                            </div>
+                        </div>
+
+                        <div style = "padding-top: 25px; text-align: center;">
+                            <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "prev('mad_max_slideshow')">Prev</button>
+                            <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "next('mad_max_slideshow')">Next</button>
+                        </div>
+    
+                        <hr>
+
                         <div class = "card-body" style = "text-align: center;">
                             <h4 class = "card-title">Mad Max: Fury Road</h4>
                             <h6 class = "text-muted">Directed by George Miller</h6>
-                            <p id = "movie_desc">In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler 
+                            <p id = "movie_desc">In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler
                               in search for her homeland with the aid of a group of female prisoners and a drifter named Max.</p>
-                            <a href="" id = "custom_btn" class = "btn">Details</a>
+                            <a href="views/mad_max.html" id = "custom_btn" class = "btn">Details</a>
                         </div>
                     </div>
                 </li>
 
                 <li class = "list-inline-item movie">
                     <div class = "card" style = "width: 25rem;">
-                        <div id="revenant_carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-slide-to="0" class="active"></li>
-                              <li data-slide-to="1"></li>
-                              <li data-slide-to="2"></li>
-                            </ol>
-                            
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="card-img-top card_images" src="images/revenant/revenant.jpg" alt="First image">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/revenant/revenant2.jpg" alt="Second inage">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="card-img-top card_images" src="images/revenant/revenant3.jpg" alt="Third image">
-                              </div>
+
+                        <div id = "custom_slideshow" class = "revenant_slideshow">
+                            <div id = "revenant_slideshow2">
+                              <img src="images/revenant/revenant3.jpg" alt="Third image">
                             </div>
-                            <a class="carousel-control-prev" href="#revenant_carousel" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#revenant_carousel" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon"></span>
-                            </a>
+                            <div id = "revenant_slideshow1">
+                              <img src="images/revenant/revenant2.jpg" alt="Second inage">
+                            </div>
+                            <div id = "revenant_slideshow0">
+                              <img src="images/revenant/revenant.jpg" alt="First image">
+                            </div>
                         </div>
-                        
+
+                        <div style = "padding-top: 25px; text-align: center;">
+                            <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "prev('revenant_slideshow')">Prev</button>
+                            <button style = "width: 5rem;" id = "custom_btn" class = "btn" onclick = "next('revenant_slideshow')">Next</button>
+                        </div>
+    
+                        <hr>
+
                         <div class = "card-body" style = "text-align: center;">
                             <h4 class = "card-title">The Revenant</h4>
                             <h6 class = "text-muted">Directed by Alejandro G. Iñárritu</h6>
-                            <p id = "movie_desc">A frontiersman on a fur trading expedition in the 1820s fights for 
+                            <p id = "movie_desc">A frontiersman on a fur trading expedition in the 1820s fights for
                               survival after being mauled by a bear and left for dead by members of his own hunting team.</p>
-                            <a href="" id = "custom_btn" class = "btn">Details</a>
+                            <a href="views/revenant.html" id = "custom_btn" class = "btn">Details</a>
                         </div>
                     </div>
                 </li>
+
+                <script src = "js/slideshow.js"></script>
             </ul>
         </div>
     </div>

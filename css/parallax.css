@@ -1,0 +1,7 @@
+.parallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-shadow: 0px 0px 5px #000;
+}

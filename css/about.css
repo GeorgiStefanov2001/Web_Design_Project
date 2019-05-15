@@ -1,0 +1,14 @@
+.site_description{
+    background-color: #2e9cca; 
+    text-align: center; 
+    color: white;
+}
+
+.about_images{
+    width: 20%;
+    height: auto;
+}
+
+p{
+    font-size:20px;
+}

@@ -1,0 +1,15 @@
+
+.top_button{
+    display:block;
+    text-align: center;
+    background-color: #29648a;
+}
+
+.top_button button{
+    font-size: 30px;
+}
+
+#custom_btn{
+    background-color: #29648a;
+    color: white;
+}

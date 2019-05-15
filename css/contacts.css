@@ -1,0 +1,9 @@
+.list_alignment{
+    color: white; 
+    list-style-position: inside; 
+    text-align: justify;
+}
+
+.my_info{
+    padding-left: 38%;
+}
